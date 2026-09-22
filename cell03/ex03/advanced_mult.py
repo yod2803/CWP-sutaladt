@@ -1,11 +1,16 @@
-i = 0
+#!/usr/bin/env python3
+import sys
 
+if len(sys.argv) > 1:
+    print("none")
+    sys.exit()
+
+i = 0
 while i <= 10:
+    print(f"Table de {i}:", end="")
     j = 0
-    row = f"Table de: {i}:"
     while j <= 10:
-        product = i * j
-        row += f" {product}"
+        print(f" {i * j}", end="")
         j += 1
-    print(row)
+    print()
     i += 1
